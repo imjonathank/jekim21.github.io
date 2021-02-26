@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="js/sampleJS.js"></script>
+    <link rel="stylesheet" href="css/jonathankim.css">
+    <title>Bibliography</title>
+</head>
+<style>
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        background-color: plum;
+    }
+    .flex-container > div {
+        background-color: salmon;
+        width: 200px;
+        margin: 25px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 45px;
+    }
+</style>
+<body onload="addElements()">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="bibliography.html">Bibliography</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="religion.html">Religions</a>
+              </li>
+          </div>
+        </div>
+    </nav>
+    <h1> Bibliography</h1>
+        <p>A list of the books used in my thesis!</p>
+    <div class="flex-container">
+        <div id="bibliography"></div>
+        <div class="row">
+            <div class="col-md h1">Book 1</div>
+                <h6>Lindsay, Jack: The Golden Ass</h6>
+                <img src="https://catalog.lib.uchicago.edu/vufind/Cover/Show?author=Apuleius&callnumber=PA6209.M3L7+1962&size=medium&title=The+golden+ass.&recordid=661199&source=Solr&isbn=0253200369&oclc=36001556" class="img-fluid" style="width:200px;height:200px;" alt="" >
+            <div class="col-md h1">Book 2</div>
+                <h6>Nock, Arthur Darby:	Conversions</h6>
+                <img src="https://catalog.lib.uchicago.edu/vufind/Cover/Show?author=Nock%2C+Arthur+Darby%2C+1902-1963&callnumber=BL639+.N63+1998&size=medium&title=Conversion+%3A+the+old+and+the+new+in+religion+from+Alexander+the+Great+to+Augustine+of+Hippo+%2F&recordid=2968858&source=Solr&isbn=0801859107&oclc=38016592" class="img-fluid" style="width:200px;height:200px;" alt="" >
+            <div class="col-md h1">Book 3</div>
+                <h6>Kenney, E. J.: Apuleius' Cupid and Psyche</h6>
+                <img src="https://catalog.lib.uchicago.edu/vufind/Cover/Show?author=Apuleius&callnumber=PA6207.M4K36+1990&size=medium&title=Cupid+%26+Psyche+%2F&recordid=1133397&source=Solr&isbn=0521260388&oclc=21226525" class="img-fluid" style="width:200px;height:200px;" alt="" >   
+        </div>
+        <div class="row">
+            <div class="col-md h1">Book 4</div>
+                <h6>Griffiths, J. Gwyn:	The Isis-Book (Metamorphoses, Book XI)</h6>
+                <img src="https://catalog.lib.uchicago.edu/vufind/Cover/Show?author=Apuleius&callnumber=PA6207.M3C8+1975&size=medium&title=The+Isis-book+%3A+%28Metamorphoses%2C+book+XI%29+%2F&recordid=101264&source=Solr&isbn=9004042709&oclc=2226473" class="img-fluid" style="width:200px;height:200px;" alt="" >
+            <div class="col-md h1">Book 5</div>
+                <h6>Bortolani, Ljuba Merlina: Magical Hymns from Roman Egypt</h6>
+                <img src=https://catalog.lib.uchicago.edu/vufind/Cover/Show?author=Bortolani%2C+Ljuba+Merlina%2C+1980-&callnumber=BF1591+.B67+2016&size=medium&title=Magical+hymns+from+Roman+Egypt+%3A+a+study+of+Greek+and+Egyptian+traditions+of+divinity+%2F&recordid=10907096&source=Solr&isbn=1107108381&oclc=945549945" class="img-fluid" style="width:200px;height:200px;" alt="" >
+            <div class="col-md h1">Book 3</div>
+                <h6>Takacs, Sarolta A.:	Isis and Sarapis in the Roman World</h6>
+                <img src="https://catalog.lib.uchicago.edu/vufind/Cover/Show?author=Taka%CC%81cs%2C+Sarolta+A.&callnumber=BL2450.I7T350+1995&size=medium&title=Isis+and+Sarapis+in+the+Roman+world+%2F&recordid=1711413&source=Solr&isbn=9004101217&oclc=31010248" class="img-fluid" style="width:200px;height:200px;" alt="" > 
+        </div>
+        <div class="row">
+            <div class="col-md h1">Book 1</div>
+                <h6> Dueck, Daniela: "When West Met East: The Encounter of Greece and Rome with the Jews, Egyptians, and Others:
+                Studies Presented to Ranon Katzoff in Honor of his 75th Birthday"</h6>
+                <img src="https://robohash.org/test" class="img-fluid" style="width:200px;height:200px;" alt="" >
+            <div class="col-md h1">Book 2</div>
+                <h6> Hanson, John Arthur: Apuleius' Metamorphoses v. I and II</h6>
+                <img src="https://catalog.lib.uchicago.edu/vufind/Cover/Show?author=Apuleius&callnumber=PA6209.M3&size=medium&title=Metamorphoses+%28The+golden+ass%29+%2F&recordid=10301175&source=Solr&isbn=0674990498&oclc=899735320" class="img-fluid" style="width:200px;height:200px;" alt="" >
+            <div class="col-md h1">Book 3</div>
+                <h6>Alfoldi, A.: A Festival of Isis </h6>
+                <img src="https://robohash.org/test1    " class="img-fluid" style="width:200px;height:200px;" alt="" > 
+        </div>
+        <div class="row">
+            <div class="col-md h1">Book 1</div>
+                <h6> Bonnefoy, Yves: Greek and Egyptian Mythologies</h6>
+                <img src="https://catalog.lib.uchicago.edu/vufind/Cover/Show?author=&callnumber=BL782.D477+1992&size=medium&title=Greek+and+Egyptian+mythologies+%2F&recordid=5549732&source=Solr&isbn=0226064549&oclc=25788705" class="img-fluid" style="width:200px;height:200px;" alt="" >
+            <div class="col-md h1">Book 2</div>
+                <h6>Denova, Rebecca I.:	Greek and Roman Religions </h6>
+                <img src="https://robohash.org/test2" class="img-fluid" style="width:200px;height:200px;" alt="" >
+            <div class="col-md h1">Book 3</div>
+                <h6>Nock, Arthur Darby	Conversions</h6>
+                <img src="https://robohash.org/test3" class="img-fluid" style="width:200px;height:200px;" alt="" > 
+        </div>    
+    </div>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>Jonathan Kim production. 2020.</p>
+      </div>
+</body>
+</html>

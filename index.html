@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Homepage</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-   
+    <script src="js/sampleJS.js"></script>
+    <link rel="stylesheet" href="css/jonathankim.css">
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/jonathankim.css"> -->
 </head>
-<body>
+<body >
+    <!-- navigation bar  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -28,42 +42,77 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
-
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="bibliography.html">Bibliography</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link active" aria-current="page" href="religion.html">Religions</a>
             </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Search</button>
-          </form> -->
         </div>
       </div>
     </nav>
-    <div class="container-fluid">
-        <h1>Hello World!</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/79/University_of_Chicago_shield.svg/394px-University_of_Chicago_shield.svg.png" 
-        width="197" height="250" alt="">
+  <div id="nav-placeholder"></div>
+  <!-- <div class="container pt-5">
+    <h1>Exploration of Classical Religions 2</h1>
+    <div id="addElements"></div>
+    <div class="container min-vh-50">
+      <div class="row mt-5">
+        <div class="col-md">
+          <div class="card w-75 h-100">
+            <img src="https://www.robohash.org/lolol" class="card-img-top" alt="">
+            <div class="card-body">
+                <h3 id="programCard" class="card-title">Testing slogan</h3>
+                <p class="card-text">This is a test to see if this button actually works. 
+                  Unsure what will happen, exactly.
+                </p>
+            </div>
+            <a href="https://classics.uchicago.edu" class="btn cardBtn">UChicago Classics</a>
+          </div>
+        </div>
+        <div class="col-md"></div>
+      </div>
+    </div> -->
+  </div>
+    
+    
+    <div class="container">
+        <h1 style="text-align:center">Exploration of Classical Religions</h1>
+        <img src="https://www.english-heritage.org.uk/siteassets/home/learn/story-of-england/romans/mithras/mithraeum-san-clemente.jpg" 
+        width="600" height="400" class="center" alt="">
 
         <h3 class="d-none d-xxl-block">
-            Jonathan Kim's Github Site (work in progress)
+            Jonathan Kim's Classics Thesis
         </h3>
         <p id="welcome"> Welcome to my DIGS 30005 site.</p>
-        <p id="second">this is the second paragraph testing.</p>
-        <p id="third">This is the third paragraph testing.</p>
-        <p id="fourth">This is the fourth paragraph testing.</p>
+        <p id="second">As an undergraduate Classics major, I study ancient Mediterranean religion.
+          I am particularly interested in religious attitudes of Imperial Rome. 
+          Through my work, I hope to gain a better understanding of how Romans viewed themselves, their gods,
+          and the gods of others around them.
+          My thesis explores the possibility of praeparatio evangelii ("preparation of the gospel") in the literary depictions of 
+          Greco-Roman religious pantheons in Apuleius' Metamorphoses. Essentially, I am wondering how Roman perception of 
+          polytheistic gods and religious structures influenced the reception of a henotheistic religious system. 
+        </p>
+
     </div>
-    
+    <!-- <div>
+      <div class="container mt-5">
+          <button type="button" class="btn btn-warning text-light" onclick="howdy('friend')">Test, test, one two three</button>
+          <button type="button" class="btn btn-warning text-light" onclick="evalNumber()">Evaluate Number</button>
+          <button type="button" class="btn btn-warning text-light" onclick="funsies()">Funsies</button>
+      </div>
+    </div> -->
+
+    <div class="container mt-5">
+      <div class="h3">SampleJS buttons</div>
+      <button type="button" class="btn btn-primary" onclick="conditional()">Conditional</button>
+      <button type="button" class="btn btn-primary" onclick="scopeValues()">ScopeVariables()</button>
+      <button type="button" class="btn btn-primary" onclick="howdy()">Greetings!</button>
+      <button type="button" class="btn btn-primary" onclick="evalNumber()">Evaluate Number</button>
+      <button type="button" class="btn btn-primary" onclick="checkTime()">Check the Time!</button>
+      
+    </div>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+      <p>Jonathan Kim production. 2020.</p>
+    </div>
 </body>
 </html>

@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="js/sampleJS.js"></script>
+    <link rel="stylesheet" href="css/jonathankim.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -24,28 +37,78 @@
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
               </li>
-  
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="bibliography.html">Bibliography</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link active" aria-current="page" href="religion.html">Religions</a>
               </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form> -->
           </div>
         </div>
-      </nav>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+          <br>
+            <h1>Context of Apuleius' Metamorphoses</h1>
+            <!-- <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/70490744_2359673877443339_6139562952568602624_o.jpg?_nc_cat=110&ccb=3&_nc_sid=0debeb&_nc_ohc=yAFtnthSS9UAX-uG2ei&_nc_ht=scontent-ort2-1.xx&oh=e162926d038c253014bba937b8191889&oe=60506AB1"
+             class="rounded" style="height:300px"  alt=""> -->
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+            </p>
+          <div class="col-sm-4">
+              <h3> About Apuleius </h3>
+              <p class="bg-info text-white">Apuleius was a famous Roman author, known for writing Metamorphoses. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Aliquam mollis, purus quis vehicula maximus, ipsum purus facilisis odio, eget finibus arcu eros sit amet nibh.
+                   Phasellus egestas nibh id erat commodo vehicula. 
+                   Pellentesque eu felis in justo tincidunt tincidunt. 
+                   Aliquam egestas quam augue, et lobortis nisl hendrerit a.
+                    Mauris faucibus diam a rhoncus convallis. 
+                    Nullam ac metus id diam mattis consequat quis dapibus neque. 
+                    Etiam lobortis, lorem id luctus venenatis, velit ipsum ullamcorper turpis, vel tempor turpis metus ac sem. 
+                    Phasellus malesuada ipsum at massa pharetra molestie. 
+                    Donec aliquam finibus augue, non fringilla orci faucibus quis. 
+                    Integer sodales, nisi pharetra ultrices fermentum, sapien nibh venenatis orci, id blandit sem augue at justo. 
+                    Integer dictum eros ut tristique pretium. Integer vel imperdiet tortor. Proin iaculis ac massa eget dictum. Praesent condimentum placerat vehicula.  </p> 
+          </div>
+          
+          <div class="col-sm-4">
+              <h3> About Metamorphoses</h3>
+              <p class="bg-info text-white"> Apuleius' Metamorphoses (also known as Asinus Aureus) stands out among Latin literature
+                as the sole surviving ancient Roman novel. The story follows a young man named Lucius, 
+                who through a series of unfortunate magical events, is turned into a donkey. 
+                His efforts to turn himself back into a human lead him across the Roman Empire, 
+                encountering a wide variety of people and religions throughout his journey.
+                Most significantly, Lucius undergoes both a physical and spiritual metamorphosis: 
+                he is ultimately saved during a festival to the Egyptian goddess Isis, to whom he now pledges cultic devotion.
+                The Metamorphoses, then, is as much an in-depth examination of a young man (a Latin bildungsroman of sorts) as it is an
+                assessment of broader Roman religion.  </p>
+              
+          </div>
+          <div class="col-sm-4">
+              <h3>Column 3</h3>        
+              <p class="bg-info text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p class="bg-info text-white">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          
+          
+      </div>
+    </div>
+    <div class="container mt-3">
+      <h1>Map API Example</h1>
+      <div id="map"></div>
+    </div>
+    <body onload="mapLoad()">
+      <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+        <!-- <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button> -->
+    
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Jonathan Kim production. 2020.</p>
+  </div>  
 </body>
 </html>

@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="js/sampleJS.js"></script>
+    <link rel="stylesheet" href="css/jonathankim.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Home</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,32 +29,72 @@
               <li class="nav-item">
                 <a class="nav-link active" href="about.html">About</a>
               </li>
-  
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="bibliography.html">Bibliography</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="religion.html">Religions</a>
               </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form> -->
           </div>
         </div>
-      </nav>
- <h1> About me</h1>    
- <h2>My name is Jonathan Kim
- </h2>
- <h2> I'm currently a student at the University of Chicago in Chicago, Illinois. </h2>
+    </nav>
+  <div class="container-fluid"> 
+    <div class="row">
+      <div class="container-md">
+        <h1>About me </h1>  
+        <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/62390060_2190005547743507_7606656676313169920_o.jpg?_nc_cat=104&ccb=3&_nc_sid=cdbe9c&_nc_ohc=TZki82-7mA4AX_MmAZS&_nc_ht=scontent-ort2-1.xx&oh=b84ace4030fe6088e945f7649cd4a7d9&oe=60504209" 
+        class="rounded float-start" style="width:375px;height:400px;" alt="">
+        
+        <p> I'm currently a joint BA/MA student at the University of Chicago in Chicago, Illinois. </p>
+        <p> As a Classics major and a Digital Studies MA candidate, 
+          my academic interests center around the study of religion (primarily ancient) 
+          and using digital technology to understand our linguistic and cultural relationships 
+          to religious institutions. My undergraduate thesis focuses on the reception of non-Greco-Roman deities
+          in Apulieus' Metamorphoses. 
+          As a MA candidate, I would like to more broadly understand religious conversions: 
+          what causes some to 'convert' to a particular religion, 
+          how people/society depend on religious 
+          ideas to understand relationships (both contemporaneously and historically), 
+          and examination of linguistic trends to describe their beliefs. </p>
+      </div>
+    </div>
+  <!-- button for links to DIGS -->
+  <button type="button" class="btn btn-danger" onclick="changeTitle()">Click here to learn more about my studies!</button>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="container-md">
+      <h1>About Apuleius' Metamorphoses</h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Apuleius_Metamorphoses_c._24.jpg" 
+      class="rounded float-start" style="width:375px;height:400px;" alt="">
+      <h3><a href="https://en.wikipedia.org/wiki/The_Golden_Ass"> Apuleius' Metamorphoses</a></h3>
+      <p>(also known as Asinus Aureus) stands out among Latin literature
+        as the sole surviving ancient Roman novel. The story follows a young man named Lucius, 
+        who through a series of unfortunate magical events, is turned into a donkey. 
+        His efforts to turn himself back into a human lead him across the Roman Empire, 
+        encountering a wide variety of people and religions throughout his journey.
+        Most significantly, Lucius undergoes both a physical and spiritual metamorphosis:           
+        he is ultimately saved during a festival to the Egyptian goddess Isis, to whom he now pledges cultic devotion.
+        The Metamorphoses, then, is as much an in-depth examination of a young man (a Latin bildungsroman of sorts) as it is an
+        assessment of broader Roman religion. 
+      </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="card-body">
+    <h5 id="programCard" class="card-title">Digital Studies</h5>
+    <p class="card-text">The University of Chicago's program in Digital Studies is a diverse Liberal 
+      Arts curriculum intended for full-time students who have an interest in a field or discipline 
+      such as history, anthropology, or linguistics. 
+    </p>
+  </div>
+
+    <p>Jonathan Kim production. 2020.</p>
+  </div>    
 </body>
 </html>
