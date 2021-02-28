@@ -19,20 +19,39 @@
               <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-light" type="submit">Search</button>
             </form> -->
-<div class="navbar">
+  <div class="dropdown">
+  <button class="dropbtn">Research</button>
+  <div class="dropdown-content">
+    <a href="data.html">Data</a>
+    <a href="wiki.html">Wiki API</a>
+    <a href="bibliography.html">Bibliography</a>
+    <a href="religion.html">Religions</a>
+  </div>
+</div>
+  
+  <div class="navbar">
   <a class="navbar-brand" href="index.html">HOME</a>
-  <a href="/contact">Contact</a>
-  <a href="#news">News</a>
+  <a href="contact.html">Contact</a>
+
   <div class="dropdown">
   <button class="dropbtn" onclick="myFunction()">Research
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-content" id="myDropdown">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="data.html">Data</a>
+    <a href="wiki.html">Wiki API</a>
+    <a href="bibliography.html">Bibliography</a>
+    <a href="religion.html">Religions</a>
+  </div>
+  <button class="dropbtn" onclick="myFunction2()">Personal
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown2">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </div>
   </div> 
+
 </div>
             <nav class="navbar-expand-lg navbar-dark bg-primary">
               <!-- <div class="container-fluid"> -->
@@ -63,6 +82,7 @@
                       <div class="drop-down menu">
                         <a class="dropdown-item" href="about.html">About</a>
                         <a class="dropdown-item" href="contact.html">Contact</a>
+                      </div>
                     </li>
                   </ul>
                 </div>

@@ -1,3 +1,40 @@
+// for experimental.html
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  
+}
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+// for the experimental.html
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+    
+  }
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
 function conditional(){
     // WORKS!
     // alert("Use Inspect to see the console and inspect the code.");
@@ -10,16 +47,8 @@ function conditional(){
         alert("Good evening!");
     }
 }
-function howdy(yourFirstName) {
-    alert("Howdy " + yourFirstName); 
-}
 
-function checkTime() {
-    let selectedElement = document.getElementById("minute");
-    console.log(selectedElement);
-    const now =new Date();
-    selectedElement.innerText = now.getMinutes();
-}
+
 
 function evalNumber(){
     //WORKS!!
@@ -41,6 +70,40 @@ function changeTitle(){
     // selectedElement.style.display="none";
 }
 
+function addElements(){
+    var valueArray = ['Book 1', 'Book 2', "Book 3"];
+    for (i in valueArray) {
+        var newDiv = document.createElement('div');
+        newDiv.setAttribute('class', 'col-md h1');
+        newDiv.setAttribute('id', 'div '+i);
+        document.getElementById('bibliography').appendChild(newDiv);
+        newDiv.innerText = valueArray[i];
+    };
+    var valueArray2 = ['Lindsay, Jack: The Golden Ass', 'Nock, Arthur Darby: Conversions', "Kenney, E. J.: Apuleius' Cupid and Psyche"];
+    for (i in valueArray2) {
+        var newH6 = document.createElement('h6');
+        document.getElementById('div ' + i).appendChild(newH6);
+        newH6.innerText = valueArray2[i];
+    };
+}
+
+languageArray = ["English", "Latin", "Ancient Greek", "Korean"]
+function languageSort() {
+    var language = prompt("Which language is most useful?");
+    languageArray.push(language);
+    var languageSorted = languageArray.sort()
+    var ULlanguage = languageSorted.map(function (i) {
+        return i
+    })
+    document.getElementById('languagelist').innerHTML = '<li>' + ULlanguage.join('</li><li>') + '</li>'
+}
+function lastlanguage() {
+    index = languageArray.length -1;
+    document.getElementById("lastlanguage").innerHTML = languageArray[index];
+}
+
+
+
 function scopeValues() {
     if (0==0) {
         var x = 0;
@@ -59,7 +122,12 @@ function scopeValues() {
     console.log("Value of z: " + z + " does not change.");
 };
 
-
+function checkTime() {
+    let selectedElement = document.getElementById("minute");
+    console.log(selectedElement);
+    const now =new Date();
+    selectedElement.innerText = now.getMinutes();
+}
 
 
 function searchMusic() {
@@ -92,22 +160,6 @@ function searchMusic() {
 //         newDiv.innerText = valueArray[i];
 //     };
 // }
-function addElements(){
-    var valueArray = ['Book 1', 'Book 2', "Book 3"];
-    for (i in valueArray) {
-        var newDiv = document.createElement('div');
-        newDiv.setAttribute('class', 'col-md h1');
-        newDiv.setAttribute('id', 'div '+i);
-        document.getElementById('bibliography').appendChild(newDiv);
-        newDiv.innerText = valueArray[i];
-    };
-    var valueArray2 = ['Lindsay, Jack: The Golden Ass', 'Nock, Arthur Darby: Conversions', "Kenney, E. J.: Apuleius' Cupid and Psyche"];
-    for (i in valueArray2) {
-        var newH6 = document.createElement('h6');
-        document.getElementById('div ' + i).appendChild(newH6);
-        newH6.innerText = valueArray2[i];
-    };
-}
 
 function parseArray() {}
 

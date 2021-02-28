@@ -7,13 +7,13 @@ function wikiAPI() {
 // step 2: define your variables
 //     create an XHR Object
 //     define base URL for API and insert searchTerm variable
-
-var searchTerm = document.getElementById('searchTerm').value;
+document.getElementById("wiki").innerHTML = "";
+var searchTerm = document.getElementById("searchTerm").value;
 var connect = new XMLHttpRequest();
 var url = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=20&gsrsearch=" + searchTerm;
 
 // step 3: open the API call 
-connect.open('GET', url)
+connect.open('GET', url);
 
 // step 4: define the actions that will happen when the response is returne:, parse and display the data
 //     load and parse the response as a JSON data object
@@ -25,11 +25,18 @@ connect.onload = function () {
     // console.log(wikiObject);
     var pages = wikiObject.query.pages;
     for (var i in pages) {
-        var newDiv = document.createElement("div");
-        newDiv.setAttribute('class','row h4');
-        document.getElementById("wiki").appendChild(newDiv);
-        newDiv.innerText = pages[i].title;
+        var pageLink = "https://en.wikipedia.org/?curid=" + pages[i].pageid;
+        var newElement = document.createElement("div");
+        newElement.href = pageLink
+        newElement.setAttribute('class','row h5');
+        newElement.setAttribute('target','_blank');
+        document.getElementById("wiki").appendChild(newElement);
+        newElement.innerText = pages[i].title;
     };
-}
+};
 // step 5: send API request to the server
 connect.send();
+document.getElementById("searchTerm").value= "";
+
+
+}
