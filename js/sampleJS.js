@@ -1,5 +1,6 @@
 function conditional(){
-    alert("Use Inspect to see the console and inspect the code.");
+    // WORKS!
+    // alert("Use Inspect to see the console and inspect the code.");
     var currentHour = new Date().getHours();
     if (currentHour < 10) {
         alert("Good morning!");
@@ -21,6 +22,7 @@ function checkTime() {
 }
 
 function evalNumber(){
+    //WORKS!!
     //js code goes here. but no params being passed through
     var inputValue = prompt("Enter any five-digit number without commas")
     if (isNaN(inputValue)) {
@@ -58,50 +60,7 @@ function scopeValues() {
 };
 
 
-// var book = new Object(); // object constructor
-// var album = (); // creates a new undefined object called album
 
-
-function mapLoad(){
-    //step 1. Define the lat lon coordinate
-    var latLng = [37.941880, 22.928038];
-    // step 2. set attribution and access key url
-    var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
-    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
-    
-    // step 3. define two tile layer variables (first variable is Url variable, then JS object, then keys and values)
-    var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
-
-    var streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
-    
-    // step 4. define map object
-    var map = L.map('map', {
-      center: latLng,
-      zoom: 9,
-      layers: [streets]
-    });
-    
-
-    // step 5. add a marker with pop-up
-    var baseLayers = {
-      "Grayscale": grayscale,
-    //   "Streets": streets
-    };
-    L.control.layers(baseLayers).addTo(map);
-    L.marker(latLng).addTo(map)
-    .bindPopup("<b>Lucius'<br>Hometown</b>").openPopup();
-  
-    //Click event
-    // var popup = L.popup();
-    // function onMapClick(e) {
-    //   popup
-    //   .setLatLng(e.latlng)
-    //   .setContent("You clicked the map at " + e.latlng.toString())
-    //   .openOn(map);
-    // }
-    map.on('click', onMapClick);
-}
 
 function searchMusic() {
     var artistName = document.getElementById('artistInput').value;

@@ -7,7 +7,10 @@
     <title>Homepage</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="js/sampleJS.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/jonathankim.css">
     <style>
       img {
@@ -16,41 +19,46 @@
         margin-right: auto;
       }
     </style>
+    <!-- JS links -->
+    <script src="js/sampleJS.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/jonathankim.css"> -->
 </head>
 <body >
-    <!-- navigation bar  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="data.html">Data</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="bibliography.html">Bibliography</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="religion.html">Religions</a>
-            </li>
-        </div>
+  <!-- navigation bar  -->
+  <nav class="navbar-expand-lg navbar-dark bg-primary">
+    <!-- <div class="container-fluid"> -->
+      <a class="navbar-brand" href="index.html">HOME</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+            role="button" aria-haspopup="true" aria-expanded="false">Research</a>
+            <div class="drop-down menu">
+              <a class="dropdown-item" href="data.html">Data</a>
+              <a class="dropdown-item" href="wiki.html">Wiki API</a>
+              <a class="dropdown-item" href="bibliography.html">Bibliography</a>
+              <a class="dropdown-item" href="religion.html">Religions</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+            role="button" aria-haspopup="true" aria-expanded="false">Personal</a>
+            <div class="drop-down menu">
+              <a class="dropdown-item" href="about.html">About</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    <!-- </div> -->
+  </nav>
   <div id="nav-placeholder"></div>
   <!-- <div class="container pt-5">
     <h1>Exploration of Classical Religions 2</h1>
@@ -72,9 +80,6 @@
         <div class="col-md"></div>
       </div>
     </div> -->
-  </div>
-    
-    
     <div class="container">
         <h1 style="text-align:center">Exploration of Classical Religions</h1>
         <img src="https://www.english-heritage.org.uk/siteassets/home/learn/story-of-england/romans/mithras/mithraeum-san-clemente.jpg" 
@@ -102,15 +107,7 @@
       </div>
     </div> -->
 
-    <div class="container mt-5">
-      <div class="h3">SampleJS buttons</div>
-      <button type="button" class="btn btn-primary" onclick="conditional()">Conditional</button>
-      <button type="button" class="btn btn-primary" onclick="scopeValues()">ScopeVariables()</button>
-      <button type="button" class="btn btn-primary" onclick="howdy()">Greetings!</button>
-      <button type="button" class="btn btn-primary" onclick="evalNumber()">Evaluate Number</button>
-      <button type="button" class="btn btn-primary" onclick="checkTime()">Check the Time!</button>
-      
-    </div>
+    
     <div class="jumbotron text-center" style="margin-bottom:0">
       <p>Jonathan Kim production. 2020.</p>
     </div>
