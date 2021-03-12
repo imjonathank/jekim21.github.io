@@ -11,7 +11,7 @@ function loadXML(){
 };
 
 function XMLrequest(link){
-    // make api call and send results to nexst function
+    // make api call and send results to next function
     var connect = new XMLHttpRequest();
     connect.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {

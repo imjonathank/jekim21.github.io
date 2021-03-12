@@ -8,6 +8,8 @@ function wikiAPI() {
 //     create an XHR Object
 //     define base URL for API and insert searchTerm variable
 document.getElementById("wiki").innerHTML = "";
+var parentDiv = document.getElementById('wiki');
+removeResults(parentDiv);
 var searchTerm = document.getElementById("searchTerm").value;
 var connect = new XMLHttpRequest();
 var url = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=20&gsrsearch=" + searchTerm;
@@ -24,15 +26,24 @@ connect.onload = function () {
     var wikiObject = JSON.parse(this.response); 
     // console.log(wikiObject);
     var pages = wikiObject.query.pages;
-    for (var i in pages) {
-        var pageLink = "https://en.wikipedia.org/?curid=" + pages[i].pageid;
-        var newElement = document.createElement("div");
-        newElement.href = pageLink
-        newElement.setAttribute('class','row h5');
-        newElement.setAttribute('target','_blank');
-        document.getElementById("wiki").appendChild(newElement);
-        newElement.innerText = pages[i].title;
+    for (i in pages) {
+        var pageURL="https://en.wikipedia.org/?curid="
+        var newAnchor = document.createElement("a");
+        newAnchor.href = pageURL+pages[i].pageid;
+        newAnchor.className= 'd-block';
+        newAnchor.innerText = pages[i].title;
+        document.getElementById("wiki").appendChild(newAnchor);
     };
+    // for (var i in pages) {
+    //     var pageLink = "https://en.wikipedia.org/?curid=" + pages[i].pageid;
+    //     var newElement = document.createElement("div");
+    //     newElement.href = pageLink
+    //     newElement.setAttribute('class','row h5');
+    //     newElement.setAttribute('target','_blank');
+    //     document.getElementById("wiki").appendChild(newElement);
+    //     newElement.innerText = pages[i].title;
+       
+    // };
 };
 // step 5: send API request to the server
 connect.send();
