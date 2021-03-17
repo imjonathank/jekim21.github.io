@@ -44,3 +44,10 @@ def table():
             'http://ochre.lib.uchicago.edu/ochre?uuid=accd571b-bae3-4d42-93d9-58b65ec79300'
         )
     )
+    texts=[]
+    for text in ochre_xml.findall('.//set/items/text'):
+        texts.append({
+            'name': text.find('./identification/label').text,
+            'type': text.find('./type').text,
+            'language': text.find('./language').text})
+    return render_template('table.html', texts_list=texts)

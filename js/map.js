@@ -11,13 +11,13 @@ function mapLoad(){
     // step 3. define two tile layer variables (first variable is Url variable, then JS object, then keys and values)
     var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
 
-    var streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+    // var streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
     
     // step 4. define map object
     var map = L.map('map', {
       center: latLng,
       zoom: 5,
-      layers: [streets]
+      layers: [grayscale]
     });
     
 

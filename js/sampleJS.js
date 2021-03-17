@@ -48,7 +48,9 @@ function conditional(){
     }
 }
 
-
+function howdy(firstName){
+    alert("Howdy " + firstName);
+}
 
 function evalNumber(){
     //WORKS!!
